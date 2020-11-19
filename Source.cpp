@@ -187,6 +187,10 @@ void GameBetween2Players() {
 		if (winnerCounter == 1) {
 			break;
 		}
+		if (Counter == 9) {
+			cout << "\n                          !!!  Game Draw  !!!" << endl;
+			break;
+		}
 		cout << "\n                     Player 2, enters a number : ";
 		cin >> Player2;
 		int CaseDefault2 = 0;
@@ -318,6 +322,10 @@ void GameBetween2Players() {
 		if (winnerCounter == 1) {
 			break;
 		}
+		if (Counter == 9) {
+			cout << "\n                          !!!  Game Draw  !!!" << endl;
+			break;
+		}
 	}
 }
 void GameBetweenComputerAnd1Player() {
@@ -341,6 +349,6 @@ int main()
 		GameBetween2Players();
 	}
 	else {
-		cout << "Incorrect input!";
+		cout << "                       !!! Incorrect Input !!!\n";
 	}
 }
